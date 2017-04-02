@@ -1,0 +1,24 @@
+---
+title: Food Menu
+---
+
+
+<div class="p-food-menu">
+  <h1 align="center">Example Food Menu</h1>
+
+  <ul class="menu-items">
+    <% data.food.menu.each do |item| %>
+      <li class="menu-item">
+        <div class="menu-item-heading">
+          <h4 class="menu-item-name"><%= item.name %></h4>
+          <span class="menu-item-price">$ <%= item.price %></span>
+          <hr/>
+        </div>
+
+        <div class="menu-item-description">
+          <p><%= item.description %></p>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

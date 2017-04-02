@@ -1,0 +1,78 @@
+@import 'layout.scss';
+@import 'forms.scss';
+
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+.p-canvas {
+  display: inline-block;
+}
+
+.p-newsletter-signup {}
+
+.p-food-menu {
+  font-family: Arial;
+
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .menu-item-heading {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    // border-bottom: 1px dotted #ccc;
+    // margin-top: -8px;
+    hr {
+      width: 100%;
+      position: absolute;
+      z-index: 0;
+      top: 1px;
+      border: none;
+      border-bottom-style: dotted;
+      border-bottom-width: 1px;
+      border-bottom-color: #ccc;
+    }
+
+    .menu-item-name,
+    .menu-item-price {
+      float: left;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      background-color: #fff;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    .menu-item-name {
+      padding-left: 0;
+    }
+
+    .menu-item-price {
+      padding-right: 0;
+      float: right;
+    }
+  }
+
+  .menu-item-description {
+    color: #999;
+    font-size: 14px;
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}
