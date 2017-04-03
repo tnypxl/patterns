@@ -17,14 +17,18 @@ body {
   font-family: Arial;
 
   .menu-items {
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
+    column-count: 2;
+    column-gap: 10px;
+
   }
 
   .menu-item {
-    width: 50%;
-    float: left;
+    width: 100%;
+    display: inline-block;
     box-sizing: border-box;
     padding: 10px;
   }
